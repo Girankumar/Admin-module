@@ -1,0 +1,23 @@
+<div>
+    <h2>Teacher Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Teacher_ID</th>
+          <th>Teacher_Name</th>
+          <th>Teacher_Department</th>
+          <th>Qualification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let college of colleges">
+          <td>{{ college.id }}</td>
+          <td>{{ college.Teacher_ID }}</td>
+          <td>{{ college.Teacher_Name }}</td>
+          <td>{{ college.Teacher_Department }}</td>
+          <td>{{ college.Qualification }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

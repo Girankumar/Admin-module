@@ -1,0 +1,61 @@
+<mat-toolbar color="primary">
+  <div class="nav-container">
+    <div>
+      <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
+        aria-label="Example icon-button with menu icon">
+        <mat-icon style="padding-bottom:.8rem;">menu</mat-icon>
+      </button>
+      <span id="img"><img src="assets/images/Onedata.png" alt="" width="250px" height="50px"
+          style="padding-top: 10px; padding-left: 20px;"></span>
+    </div>
+    <div>
+      <button style="float: right; " mat-icon-button [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu">
+        <mat-icon style="padding-top: .8rem;">more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <!-- <button mat-menu-item>
+            <mat-icon>login</mat-icon>
+            <span>login</span>
+          </button> -->
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          <span>logout</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>settings </span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>
+
+<mat-drawer-container>
+  <mat-drawer #drawer mode="side" opened>
+    <mat-list role="list" class="list">
+      <mat-list-item role="listitem" routerLink="addform">Add form data</mat-list-item>
+      <mat-list-item role="listitem" routerLink="collegedata">College</mat-list-item>
+      <mat-list-item role="listitem" routerLink="course">Course</mat-list-item>
+
+      <mat-list-item role="listitem" routerLink="student">Student</mat-list-item>
+      <mat-list-item role="listitem" routerLink="trainer">Trainer</mat-list-item>
+      <mat-list-item role="listitem" routerLink="teacher">Teacher</mat-list-item>
+      <mat-list-item role="listitem" routerLink="agreement">Agreement</mat-list-item>
+      <mat-list-item role="listitem" routerLink="payments">Payments</mat-list-item>
+      <mat-list-item role="listitem" routerLink="images">images</mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-label routerLink="/dashboard">Home</mat-label>
+    <hr />
+    <mat-card>
+      <mat-card-content>
+        <router-outlet>
+
+        </router-outlet>
+      </mat-card-content>
+    </mat-card>
+
+  </mat-drawer-content>
+</mat-drawer-container>

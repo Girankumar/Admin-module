@@ -1,0 +1,19 @@
+.nav-container{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 100%;
+}
+.mat-drawer-content{
+    height: 100vh;
+    padding: 1rem;
+}
+mat-list-item:hover {
+    background-color: rgb(0, 174, 255);
+  }
+button{
+    position: none;
+}
+.example-icon{
+    padding-right: 5rem;
+    
+}

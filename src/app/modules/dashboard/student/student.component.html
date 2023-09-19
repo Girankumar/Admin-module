@@ -1,0 +1,47 @@
+<div class="student-page">
+  <header>
+    <h1>Welcome, {{ studentName }}</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Grades</a></li>
+      <li><a href="#">Attendance</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <router-outlet></router-outlet> <!-- This is where the child components will be displayed -->
+  </main>
+</div>
+
+
+
+<!-- table  -->
+<div>
+    <h2>Student Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>college_ID</th>
+          <th>Student_ID</th>
+          <th>Roll_No</th>
+          <th>Student_Name</th>
+          <th>Department</th>
+          <th>contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let college of colleges">
+          <td>{{ college.college_ID }}</td>
+          <td>{{ college.Student_ID }}</td>
+          <td>{{ college.Roll_No }}</td>
+          <td>{{ college.Student_Name }}</td>
+          <td>{{ college.Department }}</td>
+          <td>{{ college.contact }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,105 @@
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#hero {
+  background-image: url('https://www.shutterstock.com/shutterstock/photos/785054566/display_1500/stock-photo-global-business-concept-silhouette-of-business-people-785054566.jpg');
+  background-size: cover;
+  color: #eb0909;
+  text-align: center;
+  padding: 100px 0;
+  
+}
+
+.hero-content {
+  max-width: 800px;
+  margin:0 auto;
+ 
+  // padding-right: 70%;
+  // padding-bottom: 70%;
+}
+
+// .btn {
+//   display: inline-block;
+//   padding: 10px 20px;
+//   background-color: #007bff;
+//   color: #fff;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   margin-top: 20px;
+// }
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+h1{
+  font-weight: bolder;
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color: rgb(80, 243, 255);}

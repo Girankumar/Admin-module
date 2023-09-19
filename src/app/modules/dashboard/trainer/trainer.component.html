@@ -1,0 +1,70 @@
+<body>
+  <header>
+    <nav>
+      <div class="logo">TechCo</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Welcome to TechCo</h1>
+      <p id="3">Your Trusted Tech Partner</p>
+      <!-- <a href="#contact" class="btn">Contact Us</a> -->
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a leading tech company specializing in providing innovative solutions to businesses worldwide. Our team of
+      experts is dedicated to delivering cutting-edge technology products and services.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Mobile App Development</li>
+      <li>Data Analytics</li>
+      <li>Cloud Computing</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to discuss a project, please get in touch with us.</p>
+    <a href="mailto:info@techco.com">info@techco.com</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 TechCo. All rights reserved.</p>
+  </footer>
+</body>
+
+
+<!-- for table -->
+<div class="a">
+  <h2>Trainer Details</h2>      
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Trainer_id</th>
+        <th>Trainer_Details</th>
+        <th>Trainer_Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let college of colleges">
+        <td>{{ college.id }}</td>
+        <td>{{ college.Trainer_id }}</td>
+        <td>{{ college.Trainer_Details }}</td>
+        <td>{{ college.Trainer_Name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

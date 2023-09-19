@@ -1,0 +1,21 @@
+<div>
+    <h2>College Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let college of colleges">
+          <td>{{ college.id }}</td>
+          <td>{{ college.college }}</td>
+          <td>{{ college.address }}</td>
+          <td>{{ college.contact }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,26 @@
+
+
+
+
+<!-- table -->
+<div class="a">
+    <h2>Payment Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Fee_Structure</th>
+          <th>Weekly_Report</th>
+          <th>follow up notification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let college of colleges">
+          <td>{{ college.id }}</td>
+          <td>{{ college.Fee_Structure}}</td>
+          <td>{{ college.Weekly_Report }}</td>
+          <td>{{ college.followupnotification }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
